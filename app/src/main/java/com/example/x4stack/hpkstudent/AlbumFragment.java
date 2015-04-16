@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class AlbumFragment extends Fragment {
 
     public static ArrayList<Album> albums = new ArrayList<Album>();
-    public static RecyclerView recyclerView;
+    public RecyclerView recyclerView;
     public static final String ALBUM_ID = "albumID";
 
     public AlbumFragment() {
@@ -23,6 +23,7 @@ public class AlbumFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        (new AlbumParser(this)).execute();
     }
 
     @Override
