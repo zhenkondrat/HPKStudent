@@ -7,10 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by shpak on 16.04.15.
- */
-public class FragmentReplacement extends Fragment {
+public class ReplacementFragment extends Fragment {
     private RecyclerView recyclerView;
 
     @Override
