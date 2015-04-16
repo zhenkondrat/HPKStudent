@@ -4,9 +4,9 @@ package com.example.x4stack.hpkstudent;
  * Created by shpak on 16.04.15.
  */
 public class Replacement {
-    public Replacement(String group, String numbOfLesson, String whosRaplacement, String lesson, String teacher, String classRoom) {
+    public Replacement(String group, String lessonNumber, String whosRaplacement, String lesson, String teacher, String classRoom) {
         this.group = group;
-        this.numbOfLesson = numbOfLesson;
+        this.lessonNumber = lessonNumber;
         this.whosRaplacement = whosRaplacement;
         this.lesson = lesson;
         this.teacher = teacher;
@@ -22,12 +22,12 @@ public class Replacement {
         this.group = group;
     }
 
-    public String getNumbOfLesson() {
-        return numbOfLesson;
+    public String getLessonNumber() {
+        return lessonNumber;
     }
 
-    public void setNumbOfLesson(String numbOfLesson) {
-        this.numbOfLesson = numbOfLesson;
+    public void setLessonNumber(String lessonNumber) {
+        this.lessonNumber = lessonNumber;
     }
 
     public String getWhosRaplacement() {
@@ -62,7 +62,7 @@ public class Replacement {
         this.classRoom = classRoom;
     }
 
-    private String group,numbOfLesson,whosRaplacement,lesson,teacher,classRoom;
+    private String group, lessonNumber,whosRaplacement,lesson,teacher,classRoom;
 
 
 }
