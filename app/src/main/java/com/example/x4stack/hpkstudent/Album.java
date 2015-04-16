@@ -7,6 +7,14 @@ public class Album {
     private String imageURL;
     private String albumLink;
 
+    Album(String albumName, String albumDescription, int countPhotos, String imageURL, String albumLink) {
+        this.albumName = albumName;
+        this.albumDescription = albumDescription;
+        this.countPhotos = countPhotos;
+        this.imageURL = imageURL;
+        this.albumLink = albumLink;
+    }
+
     public String getAlbumName() {
         return albumName;
     }
