@@ -43,5 +43,7 @@ public class ReplacementParser extends AsyncTask<String, Void, ArrayList<Replace
     @Override
     protected void onPostExecute(ArrayList<Replacement> arrayList) {
         super.onPostExecute(arrayList);
+        caller.replacements = arrayList;
+        caller.recyclerView.getAdapter().notifyDataSetChanged();
     }
 }
