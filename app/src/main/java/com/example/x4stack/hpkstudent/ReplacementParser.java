@@ -23,17 +23,23 @@ public class ReplacementParser extends AsyncTask<String, Void, ArrayList<Replace
         try {
             Document doc = Jsoup.connect(ReplacmentURL).get();
             Elements tr = doc.select("tr");
-
+            String last = new String();
             for (int i = 0; i < tr.size(); i++) {
                 Elements td = tr.get(i).select("td");
+                String group = td.get(0).text();
+                if (group.length() < 5) {
+                    group = last;
+                } else {
+                    last = group;
+                }
                 replacements.add(new Replacement(
-                        td.get(0).text(),
+                        group,
                         td.get(1).text(),
-                        td.get(2).text(),
                         td.get(3).text(),
                         td.get(4).text(),
                         td.get(5).text()));
             }
+            replacements.remove(0);
         } catch (IOException e) {
             e.printStackTrace();
         }

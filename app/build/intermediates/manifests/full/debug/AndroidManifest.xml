@@ -27,6 +27,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.example.x4stack.hpkstudent.AlbumPhotoActivity"
+            android:label="@string/PhotoActivity" >
+        </activity>
+        <activity
             android:name="android.support.v7.widget.TestActivity"
             android:label="RecyclerViewTestActivity" />
     </application>

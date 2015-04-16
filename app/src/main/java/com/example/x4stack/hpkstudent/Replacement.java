@@ -4,7 +4,7 @@ package com.example.x4stack.hpkstudent;
  * Created by shpak on 16.04.15.
  */
 public class Replacement {
-    public Replacement(String group, String lessonNumber, String whosRaplacement, String lesson, String teacher, String classRoom) {
+    public Replacement(String group, String lessonNumber, String lesson, String teacher, String classRoom) {
         this.group = group;
         this.lessonNumber = lessonNumber;
         this.lesson = lesson;

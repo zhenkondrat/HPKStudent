@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">HPKStudent</string>
 
+    <string name="PhotoActivity">PhotoActivity</string>
+
     <string name="title_section1">Новини</string>
     <string name="title_section2">Заміни</string>
     <string name="title_section3">Галерея</string>

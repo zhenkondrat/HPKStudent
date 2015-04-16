@@ -8,15 +8,15 @@ import android.view.ViewGroup;
 
 import com.squareup.picasso.Picasso;
 
-import java.util.ArrayList;
-
 
 public class AlbumAdapter extends RecyclerView.Adapter<AlbumViewHolder> {
 
+    private AlbumClickListener albumClickListener;
     private Context context;
 
-    public AlbumAdapter(Context context) {
+    public AlbumAdapter(Context context, AlbumClickListener albumClickListener) {
         this.context = context;
+        this.albumClickListener = albumClickListener;
     }
 
     @Override
@@ -25,10 +25,16 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(AlbumViewHolder viewHolder, int i) {
+    public void onBindViewHolder(AlbumViewHolder viewHolder, final int i) {
         Album album = AlbumFragment.albums.get(i);
         viewHolder.albumName.setText(album.getAlbumName());
         viewHolder.albumDescription.setText(album.getAlbumDescription());
+        viewHolder.wrapper.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                albumClickListener.OnAlbumClickListener(i);
+            }
+        });
         Picasso.with(context).load(album.getImageURL()).into(viewHolder.albumCover);
     }
 
