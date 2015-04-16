@@ -3,4 +3,4 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
-<!-- From: file:/home/shpak/Projects/AndroidStudio/HPKStudent/app/src/main/res/menu/global.xml -->
+<!-- From: file:/home/shpak/Загрузки/HPKStudent-master/app/src/main/res/menu/global.xml -->
