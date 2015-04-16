@@ -1,6 +1,16 @@
-<android.support.v4.view.ViewPager
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/view_pager"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#000"
+    tools:context="com.example.x4stack.hpkstudent.AlbumPhotoActivity">
 
+    <ImageView
+        android:background="#fff"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

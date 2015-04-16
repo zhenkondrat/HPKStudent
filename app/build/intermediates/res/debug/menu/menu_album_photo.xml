@@ -5,4 +5,4 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
-<!-- From: file:/home/shpak/Projects/AndroidStudio/HPKStudent/app/src/main/res/menu/menu_album_photo.xml -->
+<!-- From: file:/D:/Projects/Android/HPKStudent/app/src/main/res/menu/menu_album_photo.xml -->

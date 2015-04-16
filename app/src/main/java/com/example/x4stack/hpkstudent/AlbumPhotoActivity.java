@@ -11,11 +11,12 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 
 
-public class AlbumPhotoActivity extends ActionBarActivity {
+public class AlbumPhotoActivity extends ActionBarActivity implements PhotoClickListener {
 
     private int albumID;
+    public static final String CURRENT_PHOTO = "current_photo";
     public static ArrayList<String> imageURLs = new ArrayList<String>();
-    public static RecyclerView photosView;
+    public RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +32,19 @@ public class AlbumPhotoActivity extends ActionBarActivity {
             albumID = bundle.getInt(AlbumFragment.ALBUM_ID);
         }
 
-        (new AlbumPhotoParser(AlbumFragment.albums.get(albumID).getAlbumLink())).execute();
+        (new AlbumPhotoParser(this, AlbumFragment.albums.get(albumID).getAlbumLink())).execute();
 
-        photosView = (RecyclerView) findViewById(R.id.photos_list);
-        photosView.setAdapter(new AlbumPhotoAdapter(this));
-        photosView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
+        recyclerView = (RecyclerView) findViewById(R.id.photos_list);
+        recyclerView.setAdapter(new AlbumPhotoAdapter(this, this));
+        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        imageURLs = new ArrayList<>();
+        recyclerView.getAdapter().notifyDataSetChanged();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -49,19 +56,23 @@ public class AlbumPhotoActivity extends ActionBarActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch(item.getItemId())
-        {
-            case R.id.action_settings:
-            {
+        switch (item.getItemId()) {
+            case R.id.action_settings: {
                 return true;
             }
-            case R.id.home:
-            {
+            case R.id.home: {
                 finish();
                 return true;
             }
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void OnPhotoClicked(int position) {
+        Intent intent = new Intent(this, PhotoActivity.class);
+        intent.putExtra(CURRENT_PHOTO, position);
+        startActivity(intent);
     }
 }

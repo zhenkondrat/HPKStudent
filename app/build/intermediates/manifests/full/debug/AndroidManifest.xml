@@ -29,6 +29,17 @@
         <activity
             android:name="com.example.x4stack.hpkstudent.AlbumPhotoActivity"
             android:label="@string/PhotoActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.x4stack.hpkstudent.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.x4stack.hpkstudent.PhotoActivity"
+            android:label="@string/PhotoActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.x4stack.hpkstudent.AlbumPhotoActivity" />
         </activity>
         <activity
             android:name="android.support.v7.widget.TestActivity"
