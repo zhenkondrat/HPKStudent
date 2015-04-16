@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/home/shpak/Загрузки/HPKStudent-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-port/values.xml -->
+=======
+    <!-- From: file:/D:/Projects/Android/HPKStudent/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-port/values.xml -->
+>>>>>>> 82d9aa4c54e3af044297decdffcc7326437e3c9a
     <eat-comment/>
     <bool name="abc_action_bar_embed_tabs">false</bool>
 </resources>

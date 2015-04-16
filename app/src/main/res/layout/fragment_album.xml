@@ -4,6 +4,14 @@
     android:layout_height="match_parent"
     tools:context="com.example.x4stack.hpkstudent.AlbumFragment">
 
+<<<<<<< HEAD
+=======
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Album" />
+
+>>>>>>> 82d9aa4c54e3af044297decdffcc7326437e3c9a
     <android.support.v7.widget.RecyclerView
         android:paddingTop="8dp"
         android:paddingLeft="8dp"

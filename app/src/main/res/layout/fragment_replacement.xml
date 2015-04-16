@@ -5,13 +5,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<<<<<<< HEAD
     <android.support.v7.widget.RecyclerView
+=======
+
+    <!--<android.support.v7.widget.RecyclerView
+>>>>>>> 82d9aa4c54e3af044297decdffcc7326437e3c9a
         android:paddingBottom="2dp"
         android:clipToPadding="false"
         android:id="@+id/replacement_list"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+<<<<<<< HEAD
 
 
+=======
+        -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Zamena"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+>>>>>>> 82d9aa4c54e3af044297decdffcc7326437e3c9a
 </LinearLayout>
