@@ -21,7 +21,7 @@ public class AlbumParser extends AsyncTask<String, Void, ArrayList<Album>> {
                 Document doc = Jsoup.connect(AlbumURL).get();
                 Elements names = doc.select("h1.gallery-title");
                 Elements descriptions = doc.select("p.gallery-description");
-                Elements countPhotos = doc.select()
+                Elements countPhotos = doc.select("span.gallery-photos-num");
                 Elements images = doc.select("img.wp-post-image");
                 Elements links = doc.select("h1.gallery-title a");
 
@@ -29,7 +29,7 @@ public class AlbumParser extends AsyncTask<String, Void, ArrayList<Album>> {
                     albums.add(new Album(
                             names.get(i).text(),
                             descriptions.get(i).text(),
-                            10,
+                            Integer.parseInt(countPhotos.get(i).text()),
                             images.get(i).attr("src"),
                             links.get(i).absUrl("href")));
                 }
