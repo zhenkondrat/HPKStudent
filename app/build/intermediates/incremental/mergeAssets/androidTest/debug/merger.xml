@@ -1,6 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<merger version="3"><dataSet config="main"><source path="/home/shpak/Загрузки/HPKStudent-master/app/src/androidTest/assets"/></dataSet></merger>
-=======
 <merger version="3"><dataSet config="main"><source path="D:\Projects\Android\HPKStudent\app\src\androidTest\assets"/></dataSet></merger>
->>>>>>> 82d9aa4c54e3af044297decdffcc7326437e3c9a

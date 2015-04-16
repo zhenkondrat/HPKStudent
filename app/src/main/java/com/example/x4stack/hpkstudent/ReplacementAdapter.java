@@ -22,7 +22,7 @@ public class ReplacementAdapter extends RecyclerView.Adapter<ReplacementAdapter.
         Replacement replacement= ReplacementFragment.replacements.get(i);
 
         holder.group.setText(replacement.getGroup());
-        holder.numbOfLesson.setText(replacement.getNumbOfLesson());
+        holder.numbOfLesson.setText(replacement.getLessonNumber());
         holder.whosRaplacement.setText(replacement.getWhosRaplacement());
         holder.lesson.setText(replacement.getLesson());
         holder.teacher.setText(replacement.getTeacher());

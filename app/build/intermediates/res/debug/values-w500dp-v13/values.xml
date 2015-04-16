@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
-    <!-- From: file:/home/shpak/Загрузки/HPKStudent-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-w500dp-v13/values.xml -->
-=======
     <!-- From: file:/D:/Projects/Android/HPKStudent/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-w500dp-v13/values.xml -->
->>>>>>> 82d9aa4c54e3af044297decdffcc7326437e3c9a
     <eat-comment/>
     <integer name="abc_max_action_buttons">4</integer>
 </resources>

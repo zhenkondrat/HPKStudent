@@ -23,8 +23,4 @@
         tools:layout="@layout/fragment_navigation_drawer" />
 
 </android.support.v4.widget.DrawerLayout>
-<<<<<<< HEAD
-<!-- From: file:/home/shpak/Загрузки/HPKStudent-master/app/src/main/res/layout/activity_main.xml -->
-=======
 <!-- From: file:/D:/Projects/Android/HPKStudent/app/src/main/res/layout/activity_main.xml -->
->>>>>>> 82d9aa4c54e3af044297decdffcc7326437e3c9a
