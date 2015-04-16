@@ -1435,14 +1435,18 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f09001f;
         public static final int action_bar_title=0x7f09001e;
         public static final int action_context_bar=0x7f090032;
-        public static final int action_example=0x7f090044;
+        public static final int action_example=0x7f090049;
         public static final int action_menu_divider=0x7f090002;
         public static final int action_menu_presenter=0x7f090003;
         public static final int action_mode_bar=0x7f09002e;
         public static final int action_mode_bar_stub=0x7f09002d;
         public static final int action_mode_close_button=0x7f090020;
-        public static final int action_settings=0x7f090043;
+        public static final int action_settings=0x7f090048;
         public static final int activity_chooser_view_content=0x7f090021;
+        public static final int album_cover=0x7f090042;
+        public static final int album_description=0x7f090044;
+        public static final int album_list=0x7f090045;
+        public static final int album_name=0x7f090043;
         public static final int always=0x7f090016;
         public static final int beginning=0x7f090013;
         public static final int checkbox=0x7f090029;
@@ -1483,7 +1487,7 @@ containing a value of this type.
         public static final int search_plate=0x7f090039;
         public static final int search_src_text=0x7f09003a;
         public static final int search_voice_btn=0x7f09003e;
-        public static final int section_label=0x7f090042;
+        public static final int section_label=0x7f090046;
         public static final int shortcut=0x7f09002a;
         public static final int showCustom=0x7f09000f;
         public static final int showHome=0x7f090010;
@@ -1491,6 +1495,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f090007;
         public static final int submit_area=0x7f09003c;
         public static final int tabMode=0x7f09000b;
+        public static final int textView=0x7f090047;
         public static final int title=0x7f090027;
         public static final int up=0x7f090008;
         public static final int useLogo=0x7f090012;
@@ -1526,9 +1531,12 @@ containing a value of this type.
         public static final int abc_search_view=0x7f040014;
         public static final int abc_simple_dropdown_hint=0x7f040015;
         public static final int activity_main=0x7f040016;
-        public static final int fragment_main=0x7f040017;
-        public static final int fragment_navigation_drawer=0x7f040018;
-        public static final int support_simple_spinner_dropdown_item=0x7f040019;
+        public static final int album_view=0x7f040017;
+        public static final int fragment_album=0x7f040018;
+        public static final int fragment_main=0x7f040019;
+        public static final int fragment_navigation_drawer=0x7f04001a;
+        public static final int fragment_replacement=0x7f04001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f04001c;
     }
     public static final class menu {
         public static final int global=0x7f0d0000;
