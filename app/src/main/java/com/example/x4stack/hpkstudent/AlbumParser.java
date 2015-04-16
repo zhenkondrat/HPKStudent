@@ -12,6 +12,11 @@ import java.util.ArrayList;
 public class AlbumParser extends AsyncTask<String, Void, ArrayList<Album>> {
 
     private String AlbumURL = "http://hpk.edu.ua/gallery";
+    private AlbumFragment caller;
+
+    AlbumParser(AlbumFragment albumFragment) {
+        caller = albumFragment;
+    }
 
     @Override
     protected ArrayList<Album> doInBackground(String... strings) {
@@ -50,5 +55,7 @@ public class AlbumParser extends AsyncTask<String, Void, ArrayList<Album>> {
     @Override
     protected void onPostExecute(ArrayList<Album> arrayList) {
         super.onPostExecute(arrayList);
+        caller.albums = arrayList;
+        caller.recyclerView.getAdapter().notifyDataSetChanged();
     }
 }
