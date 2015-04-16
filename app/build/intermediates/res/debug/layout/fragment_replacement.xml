@@ -11,6 +11,8 @@
         android:id="@+id/replacement_list"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"/>
 
-</LinearLayout><!-- From: file:/D:/Projects/Android/HPKStudent/app/src/main/res/layout/fragment_replacement.xml -->
+</LinearLayout><!-- From: file:/home/shpak/Projects/AndroidStudio/HPKStudent/app/src/main/res/layout/fragment_replacement.xml -->

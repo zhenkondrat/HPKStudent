@@ -23,7 +23,6 @@ public class ReplacementAdapter extends RecyclerView.Adapter<ReplacementAdapter.
 
         holder.group.setText(replacement.getGroup());
         holder.numbOfLesson.setText(replacement.getLessonNumber());
-        holder.whosRaplacement.setText(replacement.getWhosRaplacement());
         holder.lesson.setText(replacement.getLesson());
         holder.teacher.setText(replacement.getTeacher());
         holder.classRoom.setText(replacement.getClassRoom());
@@ -35,13 +34,12 @@ public class ReplacementAdapter extends RecyclerView.Adapter<ReplacementAdapter.
     }
 
     public static class ReplacementHolder extends RecyclerView.ViewHolder {
-        public TextView group, numbOfLesson,whosRaplacement,lesson,teacher,classRoom;
+        public TextView group, numbOfLesson,lesson,teacher,classRoom;
 
         public ReplacementHolder(View view) {
             super(view);
             group = (TextView) view.findViewById(R.id.group);
             numbOfLesson = (TextView) view.findViewById(R.id.numbOfLesson);
-            whosRaplacement = (TextView) view.findViewById(R.id.whosRaplacement);
             lesson = (TextView) view.findViewById(R.id.lesson);
             teacher = (TextView) view.findViewById(R.id.teacher);
             classRoom = (TextView) view.findViewById(R.id.classRoom);

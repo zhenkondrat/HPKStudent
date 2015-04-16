@@ -7,7 +7,6 @@ public class Replacement {
     public Replacement(String group, String lessonNumber, String whosRaplacement, String lesson, String teacher, String classRoom) {
         this.group = group;
         this.lessonNumber = lessonNumber;
-        this.whosRaplacement = whosRaplacement;
         this.lesson = lesson;
         this.teacher = teacher;
         this.classRoom = classRoom;
@@ -28,14 +27,6 @@ public class Replacement {
 
     public void setLessonNumber(String lessonNumber) {
         this.lessonNumber = lessonNumber;
-    }
-
-    public String getWhosRaplacement() {
-        return whosRaplacement;
-    }
-
-    public void setWhosRaplacement(String whosRaplacement) {
-        this.whosRaplacement = whosRaplacement;
     }
 
     public String getLesson() {
@@ -62,7 +53,7 @@ public class Replacement {
         this.classRoom = classRoom;
     }
 
-    private String group, lessonNumber,whosRaplacement,lesson,teacher,classRoom;
+    private String group, lessonNumber,lesson,teacher,classRoom;
 
 
 }
