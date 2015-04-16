@@ -10,10 +10,12 @@ import com.squareup.picasso.Picasso;
 
 public class AlbumPhotoAdapter extends RecyclerView.Adapter<PhotoViewHolder> {
 
+    private PhotoClickListener callback;
     private Context context;
 
-    AlbumPhotoAdapter(Context context) {
+    AlbumPhotoAdapter(Context context, PhotoClickListener callback) {
         this.context = context;
+        this.callback = callback;
     }
 
     @Override
@@ -28,11 +30,19 @@ public class AlbumPhotoAdapter extends RecyclerView.Adapter<PhotoViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(PhotoViewHolder holder, int position) {
+    public void onBindViewHolder(PhotoViewHolder holder, final int position) {
         Picasso.with(context)
                 .load(AlbumPhotoActivity.imageURLs.get(position))
                 .fit()
                 .centerCrop()
                 .into(holder.image);
+        if (callback != null) {
+            holder.image.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    callback.OnPhotoClicked(position);
+                }
+            });
+        }
     }
 }

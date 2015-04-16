@@ -1435,7 +1435,6 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f09001f;
         public static final int action_bar_title=0x7f09001e;
         public static final int action_context_bar=0x7f090032;
-        public static final int action_example=0x7f090051;
         public static final int action_menu_divider=0x7f090002;
         public static final int action_menu_presenter=0x7f090003;
         public static final int action_mode_bar=0x7f09002e;
@@ -1469,6 +1468,7 @@ containing a value of this type.
         public static final int icon=0x7f090026;
         public static final int ifRoom=0x7f090018;
         public static final int image=0x7f090023;
+        public static final int imageView=0x7f090043;
         public static final int lesson=0x7f09004d;
         public static final int listMode=0x7f090009;
         public static final int list_item=0x7f090025;
@@ -1506,7 +1506,6 @@ containing a value of this type.
         public static final int title=0x7f090027;
         public static final int up=0x7f090008;
         public static final int useLogo=0x7f090012;
-        public static final int view_pager=0x7f090043;
         public static final int withText=0x7f09001a;
         public static final int wrap_content=0x7f09001d;
     }

@@ -3,6 +3,8 @@
     android:layout_width="100dp"
     android:layout_height="100dp"
     android:scaleType="centerCrop"
-    android:id="@+id/photo_view">
+    android:id="@+id/photo_view"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp">
 
-</ImageView><!-- From: file:/home/shpak/Projects/AndroidStudio/HPKStudent/app/src/main/res/layout/photos_view.xml -->
+</ImageView><!-- From: file:/D:/Projects/Android/HPKStudent/app/src/main/res/layout/photos_view.xml -->

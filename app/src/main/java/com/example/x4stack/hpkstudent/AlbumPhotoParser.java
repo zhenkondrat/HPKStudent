@@ -11,9 +11,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class AlbumPhotoParser extends AsyncTask<String, Void, ArrayList<String>> {
+    private AlbumPhotoActivity caller;
     private String albumURL;
 
-    AlbumPhotoParser(String albumURL) {
+    AlbumPhotoParser(AlbumPhotoActivity caller, String albumURL) {
+        this.caller = caller;
         this.albumURL = albumURL;
     }
 
@@ -37,5 +39,8 @@ public class AlbumPhotoParser extends AsyncTask<String, Void, ArrayList<String>>
     @Override
     protected void onPostExecute(ArrayList<String> strings) {
         super.onPostExecute(strings);
+        caller.imageURLs = strings;
+        caller.recyclerView.getAdapter().notifyDataSetChanged();
     }
+
 }
